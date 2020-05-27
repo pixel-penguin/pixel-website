@@ -1,0 +1,29 @@
+{
+    "name": "pixel-penguin/website",
+    "description": "This is the website Package for the great pixel penguin website",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gerrit Vermeulen",
+            "email": "gerrit@pixel-penguin.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+	"autoload": {
+        "psr-4": {
+			"PixelPenguin\\Website\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"PixelPenguin\\Website\\PixelPenguinWebsiteServiceProvider"
+			],
+			"aliases": {
+				"PixelPenguinWebsite": "PixelPenguin\\Website\\Facade"
+			}
+		}
+	}
+}
